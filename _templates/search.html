@@ -13,7 +13,7 @@
         bindasset="apikey:api.api_key;endpoint:api.words.endpoint"
         data-src="{endpoint}&column=*&where=word->>{l}.ilike({q}*)&limit=30"
         data-header="apikey:{apikey};Prefer:count=exact" data-iterate="true" data-loader="false"
-        class="box br05 bcwhite- black- pa w100 ail- zi2 autocomplete" data-onempty="#empty2" hide>
+        class="box br05 bcwhite- black- pa w100 ail- zi2 autocomplete" data-onempty="show:#empty2" data-onnotempty="hide:#empty2" hide>
         <figure>
           <a bindglobal="l:globalize.code" data-set="id:id" data-get="word.{l}" href="word.html?i={id}" padding="1rem"
             mouseover="bgcolor:[whitesmoke]" mouseout="bgcolor:[inherit]"></a>
